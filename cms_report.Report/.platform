@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "cms_report",
+    "description": "report created using API"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "628ce6bf-0ad2-899b-4576-1f7525c865e7"
+  }
+}

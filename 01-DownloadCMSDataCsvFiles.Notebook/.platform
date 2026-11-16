@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "01-DownloadCMSDataCsvFiles"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "15371a8c-812b-9035-4e97-27d1da5cc2bc"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "0c7e1796-b8bd-9dfb-42c5-beacfc88645a",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "cms_semantic_model",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "db2a1d2e-28c7-4177-9839-c632e6e27a95",
+      "is_selected": true,
+      "display_name": "cms_provider_dim_year",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "27499f70-4f6c-459a-adc4-0f35e7d9dda4",
+          "is_selected": true,
+          "display_name": "Year",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "e94def50-9f33-4579-9474-ce18355cbf25",
+      "is_selected": true,
+      "display_name": "cms_provider_dim_drug",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "f0809ba7-038a-46e1-96dc-23a6866ac116",
+          "is_selected": true,
+          "display_name": "Brand Name",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": "Brand Name for a prescription drug",
+          "children": []
+        },
+        {
+          "id": "d64c2ed3-3eb5-40b1-bb89-b0334c63ec3a",
+          "is_selected": true,
+          "display_name": "Generic Name",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "022a9ba4-9f7c-4520-ad95-cdec5186b6b2",
+      "is_selected": true,
+      "display_name": "cms_provider_dim_provider",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "024126ab-fea3-4f1a-9cb9-bd2d7f826394",
+          "is_selected": true,
+          "display_name": "Name",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "32e21d9b-28be-4a61-97e7-f58f81ddc7e9",
+          "is_selected": true,
+          "display_name": "Prescriber NPI",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0711c1bc-66cf-416f-966f-3f7e9936d0be",
+          "is_selected": true,
+          "display_name": "Prescriber Type",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": "Also known as Prescriber Specialty",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "a903973a-57fb-49c6-bcfa-9b36f557ab13",
+      "is_selected": true,
+      "display_name": "cms_provider_dim_geography",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "1ef6a6da-2c5e-4b04-98c1-c54228b924e9",
+          "is_selected": true,
+          "display_name": "City",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "27bbf9b1-6e78-4fd1-afab-ceb2691814b9",
+          "is_selected": true,
+          "display_name": "City State",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "77a8738f-d249-4305-95ae-933f450385ba",
+          "is_selected": true,
+          "display_name": "State",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "9add4695-2a75-43f4-9c30-ec8b4a434e1c",
+      "is_selected": true,
+      "display_name": "cms_provider_drug_costs_star",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "3e64a327-7efb-43c1-bf14-5baddba7e544",
+          "is_selected": true,
+          "display_name": "Row Count",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ffff7c44-16e0-4978-a189-7cec538c3fca",
+          "is_selected": true,
+          "display_name": "Total Claims",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2fd8b4b3-f64f-4377-9e87-e18282e3ca78",
+          "is_selected": true,
+          "display_name": "Total Beneficiaries",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2ee2e98c-6c8f-477f-97c4-07e2ab2f45b6",
+          "is_selected": true,
+          "display_name": "Total 30 Day Fills",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "96d965a8-899d-4ea0-a94b-11defdf02113",
+          "is_selected": true,
+          "display_name": "Total Days Supply",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6d5d742a-c42b-4935-9db5-a1eca080bf36",
+          "is_selected": true,
+          "display_name": "Total Drug Cost",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d8418e3f-0acd-4d44-ab9c-45ec29fb596f",
+          "is_selected": true,
+          "display_name": "Cost per Claim",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e2588350-1484-48df-8ad1-35dba091cf11",
+          "is_selected": true,
+          "display_name": "Cost per Day",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e4636364-59d3-4067-8d46-52d8cd192da6",
+          "is_selected": true,
+          "display_name": "Days per Claim",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

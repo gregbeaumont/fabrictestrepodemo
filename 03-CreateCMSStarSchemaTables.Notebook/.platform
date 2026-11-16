@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "03-CreateCMSStarSchemaTables"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0f7f3704-2e27-ada3-4e9a-445ba09454ae"
+  }
+}
